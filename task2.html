@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Chat</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #ece5dd;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    .container {
+        width: 400px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    
+    .header {
+        background-color: #075e54;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+    }
+    
+    .card {
+        display: flex;
+        align-items: center;
+    }
+    
+    .avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    
+    .name {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    
+    .a {
+        font-size: 20px;
+    }
+    
+    .chat-body {
+        flex-grow: 1;
+        padding: 15px;
+        background-color: #e5ddd5;
+        overflow-y: auto;
+    }
+    
+    .message {
+        max-width: 70%;
+        margin-bottom: 15px;
+        padding: 10px;
+        border-radius: 10px;
+        position: relative;
+    }
+    
+    .message.left {
+        background-color: #dcf8c6;
+        margin-left: auto;
+    }
+    
+    .message.right {
+        background-color: #fff;
+    }
+    
+    .time {
+        font-size: 12px;
+        color: #888;
+        position: absolute;
+        bottom: -15px;
+        right: 10px;
+    }
+    
+    .chat-footer {
+        background-color: #f0f0f0;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .chat-input {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 20px;
+        outline: none;
+        margin-right: 10px;
+    }
+    
+    .send-btn {
+        background-color: #075e54;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="card">
+                <img src="https://i.pinimg.com/originals/03/df/a6/03dfa689627ea9d551c0ec921515cf09.png" alt="User" class="avatar">
+                <div class="name">Deepika</div>
+            </div>
+            <div class="a">
+               
+                <span class="material-symbols-outlined">
+                    <span class="material-symbols-outlined">
+                        videocam
+                        </span>
+                    call
+                    </span>
+            </div>
+        </div>
+
+        <div class="chat-body">
+            <div class="message right ">
+                <p>Hello, how are you?</p>
+                <span class="time">10:15 AM</span>
+                
+            </div>
+            <div class="message left">
+                <p>I'm good, thank you! How about you?</p>
+                <span class="time">10:16 AM</span>
+            </div>
+
+    <div class="message right">
+            <p>yes good</p>
+            <span class="time">10:17 AM</span>
+        </div>
+    <div class="message left">
+        <p>ok,how is your office</p>
+        <span class="time">10:18 AM</span>
+    </div>
+    <div class="message right">
+        <p>ok some more better</p>
+        <span class="time">10:19 AM</span>
+    </div>
+    <div class="message left">
+        <p>ok,Nice</p>
+        <span class="time">10:20 AM</span>
+    </div>
+    </div>
+
+        <div class="chat-footer">
+            <input type="text" placeholder="Type a message" class="chat-input">
+            <button class="send-btn">Send</button>
+        </div>
+    </div>
+</body>
+</html>
